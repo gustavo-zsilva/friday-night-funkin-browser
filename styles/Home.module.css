@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
+.container div {
+  height: 3rem;
+  
+  display: flex;
+  justify-self: baseline;
+  align-items: center;
+  align-self: baseline;
+
+  background-color: royalblue;
+  padding: 2rem;
+
+  animation: up 2s backwards;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(0vh);
+  } to {
+    transform: translateY(-100vh);
+  }
+}
